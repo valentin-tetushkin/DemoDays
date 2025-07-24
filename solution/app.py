@@ -23,7 +23,7 @@ app = FastAPI(swagger_ui_parameters={"syntaxHighlight": False})
 # ---------------------------- pydantic models ---------------------------- #
 
 class EncodeRequest(BaseModel):
-    text: str = Field(..., max_length=256, description="Строка для кодирования в звук")
+    text: str = Field(..., description="Строка для кодирования в звук")
 
 
 class EncodeResponse(BaseModel):

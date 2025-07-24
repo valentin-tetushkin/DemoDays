@@ -81,7 +81,6 @@ components:
       properties:
         text:
           type: string
-          maxLength: 256
           description: Строка для кодирования в звук
       required:
         - text
